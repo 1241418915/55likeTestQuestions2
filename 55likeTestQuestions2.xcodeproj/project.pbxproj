@@ -305,8 +305,8 @@
 				TargetAttributes = {
 					7CE5B7251E67B71E00F56E73 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = UP9LBUW474;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 6CGRS262L5;
+						ProvisioningStyle = Automatic;
 					};
 					7CE5B73E1E67B71E00F56E73 = {
 						CreatedOnToolsVersion = 8.1;
@@ -585,15 +585,17 @@
 			baseConfigurationReference = 701B59925ED7A6A754045002 /* Pods-55likeTestQuestions2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UP9LBUW474;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6CGRS262L5;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/55likeTestQuestions2/PrefixHeader.pch";
 				INFOPLIST_FILE = 55likeTestQuestions2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.55like.-5likeTestQuestions2";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.55like.-5likeTestQuestions2s";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "700f802f-4fb4-49a5-afd2-5bbf0a60e4ad";
-				PROVISIONING_PROFILE_SPECIFIER = wwlikeDevelopment;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -602,16 +604,17 @@
 			baseConfigurationReference = 41D9862DEBAAFF6BC6EA6706 /* Pods-55likeTestQuestions2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = UP9LBUW474;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6CGRS262L5;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/55likeTestQuestions2/PrefixHeader.pch";
 				INFOPLIST_FILE = 55likeTestQuestions2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.55like.-5likeTestQuestions2";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.55like.-5likeTestQuestions2s";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fc9333cb-219d-420e-9c48-17d3105c61cb";
-				PROVISIONING_PROFILE_SPECIFIER = wwlikeDistibution;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
