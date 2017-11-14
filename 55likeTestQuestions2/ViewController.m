@@ -127,7 +127,6 @@
         }
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.contentTextView.text = model.content;
-//        [self addDownKeyboard:cell.contentTextView];
         cell.contentTextView.tag = indexPath.row;
         cell.contentTextView.delegate = self;
         return cell;

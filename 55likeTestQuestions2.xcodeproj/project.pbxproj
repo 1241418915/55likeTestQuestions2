@@ -23,11 +23,6 @@
 		BBCAAC411FB9D71000CBC147 /* TextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBCAAC401FB9D71000CBC147 /* TextCell.m */; };
 		BBCAAC461FB9E15700CBC147 /* ShowCammera.m in Sources */ = {isa = PBXBuildFile; fileRef = BBCAAC451FB9E15700CBC147 /* ShowCammera.m */; };
 		BBCAAC491FB9E20400CBC147 /* UsualMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = BBCAAC481FB9E20400CBC147 /* UsualMethod.m */; };
-		BBCAAC551FB9E93600CBC147 /* UIView+WKKeyboardFirstResponderNotify.m in Sources */ = {isa = PBXBuildFile; fileRef = BBCAAC4C1FB9E93600CBC147 /* UIView+WKKeyboardFirstResponderNotify.m */; };
-		BBCAAC561FB9E93600CBC147 /* WKKeyboard+AccessObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BBCAAC4E1FB9E93600CBC147 /* WKKeyboard+AccessObject.m */; };
-		BBCAAC571FB9E93600CBC147 /* WKKeyboard+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = BBCAAC501FB9E93600CBC147 /* WKKeyboard+Animation.m */; };
-		BBCAAC581FB9E93600CBC147 /* WKKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = BBCAAC521FB9E93600CBC147 /* WKKeyboard.m */; };
-		BBCAAC591FB9E93600CBC147 /* WKKeyboardObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = BBCAAC541FB9E93600CBC147 /* WKKeyboardObjects.m */; };
 		BBCAAC5C1FB9EC3500CBC147 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBCAAC5B1FB9EC3500CBC147 /* RootViewController.m */; };
 		FD79FA7D8543BD325FE388ED /* libPods-55likeTestQuestions2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D09AE2FD2019B2CEF577304C /* libPods-55likeTestQuestions2.a */; };
 /* End PBXBuildFile section */
@@ -85,16 +80,6 @@
 		BBCAAC451FB9E15700CBC147 /* ShowCammera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowCammera.m; sourceTree = "<group>"; };
 		BBCAAC471FB9E20400CBC147 /* UsualMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsualMethod.h; sourceTree = "<group>"; };
 		BBCAAC481FB9E20400CBC147 /* UsualMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsualMethod.m; sourceTree = "<group>"; };
-		BBCAAC4B1FB9E93600CBC147 /* UIView+WKKeyboardFirstResponderNotify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WKKeyboardFirstResponderNotify.h"; sourceTree = "<group>"; };
-		BBCAAC4C1FB9E93600CBC147 /* UIView+WKKeyboardFirstResponderNotify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WKKeyboardFirstResponderNotify.m"; sourceTree = "<group>"; };
-		BBCAAC4D1FB9E93600CBC147 /* WKKeyboard+AccessObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKKeyboard+AccessObject.h"; sourceTree = "<group>"; };
-		BBCAAC4E1FB9E93600CBC147 /* WKKeyboard+AccessObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKKeyboard+AccessObject.m"; sourceTree = "<group>"; };
-		BBCAAC4F1FB9E93600CBC147 /* WKKeyboard+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKKeyboard+Animation.h"; sourceTree = "<group>"; };
-		BBCAAC501FB9E93600CBC147 /* WKKeyboard+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKKeyboard+Animation.m"; sourceTree = "<group>"; };
-		BBCAAC511FB9E93600CBC147 /* WKKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKKeyboard.h; sourceTree = "<group>"; };
-		BBCAAC521FB9E93600CBC147 /* WKKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKKeyboard.m; sourceTree = "<group>"; };
-		BBCAAC531FB9E93600CBC147 /* WKKeyboardObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKKeyboardObjects.h; sourceTree = "<group>"; };
-		BBCAAC541FB9E93600CBC147 /* WKKeyboardObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKKeyboardObjects.m; sourceTree = "<group>"; };
 		BBCAAC5A1FB9EC3500CBC147 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		BBCAAC5B1FB9EC3500CBC147 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		D09AE2FD2019B2CEF577304C /* libPods-55likeTestQuestions2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-55likeTestQuestions2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -242,30 +227,12 @@
 		BBCAAC431FB9E14100CBC147 /* MyOwn */ = {
 			isa = PBXGroup;
 			children = (
-				BBCAAC4A1FB9E93600CBC147 /* WKKeyboard */,
 				BBCAAC441FB9E15700CBC147 /* ShowCammera.h */,
 				BBCAAC451FB9E15700CBC147 /* ShowCammera.m */,
 				BBCAAC471FB9E20400CBC147 /* UsualMethod.h */,
 				BBCAAC481FB9E20400CBC147 /* UsualMethod.m */,
 			);
 			path = MyOwn;
-			sourceTree = "<group>";
-		};
-		BBCAAC4A1FB9E93600CBC147 /* WKKeyboard */ = {
-			isa = PBXGroup;
-			children = (
-				BBCAAC4B1FB9E93600CBC147 /* UIView+WKKeyboardFirstResponderNotify.h */,
-				BBCAAC4C1FB9E93600CBC147 /* UIView+WKKeyboardFirstResponderNotify.m */,
-				BBCAAC4D1FB9E93600CBC147 /* WKKeyboard+AccessObject.h */,
-				BBCAAC4E1FB9E93600CBC147 /* WKKeyboard+AccessObject.m */,
-				BBCAAC4F1FB9E93600CBC147 /* WKKeyboard+Animation.h */,
-				BBCAAC501FB9E93600CBC147 /* WKKeyboard+Animation.m */,
-				BBCAAC511FB9E93600CBC147 /* WKKeyboard.h */,
-				BBCAAC521FB9E93600CBC147 /* WKKeyboard.m */,
-				BBCAAC531FB9E93600CBC147 /* WKKeyboardObjects.h */,
-				BBCAAC541FB9E93600CBC147 /* WKKeyboardObjects.m */,
-			);
-			path = WKKeyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -459,21 +426,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBCAAC551FB9E93600CBC147 /* UIView+WKKeyboardFirstResponderNotify.m in Sources */,
 				BBCAAC3A1FB9D59200CBC147 /* ViewController.m in Sources */,
 				BBCAAC3E1FB9D5DB00CBC147 /* DataModel.m in Sources */,
 				BBCAAC2F1FB9C75700CBC147 /* GetHeight.m in Sources */,
 				BBCAAC411FB9D71000CBC147 /* TextCell.m in Sources */,
-				BBCAAC571FB9E93600CBC147 /* WKKeyboard+Animation.m in Sources */,
 				7CE5B72E1E67B71E00F56E73 /* AppDelegate.m in Sources */,
-				BBCAAC561FB9E93600CBC147 /* WKKeyboard+AccessObject.m in Sources */,
 				BBCAAC491FB9E20400CBC147 /* UsualMethod.m in Sources */,
 				BBCAAC291FB9B84E00CBC147 /* FullScreenImageCell.m in Sources */,
 				BBCAAC2C1FB9B87100CBC147 /* SingleImageCell.m in Sources */,
-				BBCAAC591FB9E93600CBC147 /* WKKeyboardObjects.m in Sources */,
 				BBCAAC5C1FB9EC3500CBC147 /* RootViewController.m in Sources */,
 				BBCAAC461FB9E15700CBC147 /* ShowCammera.m in Sources */,
-				BBCAAC581FB9E93600CBC147 /* WKKeyboard.m in Sources */,
 				7CE5B72B1E67B71E00F56E73 /* main.m in Sources */,
 				BBCAAC321FB9C7EA00CBC147 /* MyOwnFooterView.m in Sources */,
 			);
