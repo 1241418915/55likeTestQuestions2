@@ -1,0 +1,89 @@
+//
+//  WKKeyboard.m
+//  WKProject
+//
+//  Created by 王 on 2017/4/3.
+//  Copyright © 2017年 WK. All rights reserved.
+//
+
+#import "WKKeyboard.h"
+#import "WKKeyboard+Animation.h"
+#import "WKKeyboard+AccessObject.h"
+#import "UIView+WKKeyboardFirstResponderNotify.h"
+
+
+@interface WKKeyboard ()
+
++ (void)keyboardWillShow:(NSNotification *)notification;
++ (void)keyboardWillHide:(NSNotification *)notification;
++ (void)addObservers;
++ (void)removeObservers;
+
+@end
+
+@implementation WKKeyboard
+
+#pragma mark - class method
++ (void)addRegisterTheViewNeedWKKeyboard:(UIView *)view
+{
+    [self objects].observerView         = view;
+    [self objects].originalViewFrame    = view.frame;
+    [self objects].isKeyboardShow       = NO;
+    [self addObservers];
+}
+
++ (void)removeRegisterTheViewNeedWKKeyboard
+{
+    objc_removeAssociatedObjects(self);
+    [self removeObservers];
+}
+
+
+#pragma mark - private
++ (void)keyboardWillShow:(NSNotification *)notification
+{
+    // 第一次看到键盘
+    if (![self objects].isKeyboardShow)
+    {
+        [self objects].isKeyboardShow               = YES;
+        [self objects].keyboardAnimationDutation    = [[[notification userInfo] objectForKey:UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+        [self objects].keyboardFrame                = [[[notification userInfo] objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
+        
+        // get UITextEffectsWindow
+        for (UIWindow *eachWindow in [UIApplication sharedApplication].windows)
+        {
+            if ([eachWindow isKindOfClass:NSClassFromString(@"UITextEffectsWindow")])
+            {
+                [self objects].textEffectsWindow = eachWindow;
+            }
+        }
+        [self wkKeyboardAnimation];
+    }
+    else
+    {
+        // 当键盘大小有变动时，还会再进来一次
+        [self objects].keyboardAnimationDutation    = [[[notification userInfo] objectForKey:UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+        [self objects].keyboardFrame                = [[[notification userInfo] objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
+        [self wkKeyboardAnimation];
+    }
+}
+
++ (void)keyboardWillHide:(NSNotification *)notification
+{
+    [self objects].isKeyboardShow = NO;
+    [self wkKeyboardAnimation];
+}
+
++ (void)addObservers
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
+}
+
++ (void)removeObservers
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
+}
+
+@end

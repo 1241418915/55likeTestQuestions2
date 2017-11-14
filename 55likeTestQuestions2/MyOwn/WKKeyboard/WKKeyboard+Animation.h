@@ -1,0 +1,16 @@
+//
+//  WKKeyboard+Animation.h
+//  WKProject
+//
+//  Created by 王 on 2017/4/3.
+//  Copyright © 2017年 WK. All rights reserved.
+//
+
+#import "WKKeyboard.h"
+
+@interface WKKeyboard (Animation)
+
++ (void)changeFirstResponder:(UIView *)newFirstResponderView;
++ (void)wkKeyboardAnimation;
+
+@end

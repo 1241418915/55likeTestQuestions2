@@ -1,0 +1,23 @@
+//
+//  WKKeyboard+AccessObject.m
+//  WKProject
+//
+//  Created by 王珂 on 2017/4/3.
+//  Copyright © 2017年 WK. All rights reserved.
+//
+
+#import "WKKeyboard+AccessObject.h"
+
+@implementation WKKeyboard (AccessObject)
+
++ (WKKeyboardObjects *)objects
+{
+    if (!objc_getAssociatedObject(self, _cmd))
+    {
+        objc_setAssociatedObject(self, _cmd, [WKKeyboardObjects new], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }
+    
+    return objc_getAssociatedObject(self, _cmd);
+}
+
+@end

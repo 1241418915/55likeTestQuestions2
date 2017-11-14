@@ -1,0 +1,6 @@
+platform :ios,’8.0’
+target '55likeTestQuestions2' do
+pod 'Masonry'
+pod 'SDWebImage', '~> 4.0.0'
+pod 'IQKeyboardManager', '~> 5.0.6'
+end
